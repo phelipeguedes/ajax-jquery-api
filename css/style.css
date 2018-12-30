@@ -1,0 +1,20 @@
+header {
+	margin-top: 1%;
+}
+
+header > img {
+	margin-left: 0.5%;
+	width: 260px;
+}
+
+h2 {
+	margin: 10px 0px 10px 0px;
+}
+
+button#btn_nota {
+	font-weight: bold;
+}
+
+small.form-text {
+	color: blue;
+}

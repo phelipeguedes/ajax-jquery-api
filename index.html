@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax/jQuery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<img src="http://www.devmedia.com.br/Imagens/2013/logo_new.png" alt="">
+	</header>
+	
+	<div class="container-fluid">
+		<h2 class="align-text-top">Consulta de Notas</h2>
+		
+		<form action="#">
+			<div class="form-row">
+				<div class="form-group col-2">
+					<input type="text" class="form-control" id="id_nota" placeholder="id da nota a ser buscada">
+					<small class="form-text">sem id p/ ver todas as notas</small>					
+				</div>
+
+				<div class="col-sm-1">
+					<button type="submit" class="btn btn-md btn-info" id="btn_nota">Enviar</button>
+					<!-- exibe um loading até completar a requisição -->
+					<span id="loading"></span>	
+				</div>
+			</div>			
+		</form>
+
+		<hr>
+		
+		<!-- mostra a retorno vindo da API -->
+		<div id="resposta"></div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
